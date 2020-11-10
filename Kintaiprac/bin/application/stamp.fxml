@@ -1,8 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1">
-	  <!-- TODO Add Nodes -->
-</AnchorPane>
 
+<AnchorPane prefHeight="453.0" prefWidth="736.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.stamp">
+   <children>
+      <Button fx:id="btnSyukkin" layoutX="292.0" layoutY="104.0" mnemonicParsing="false" onAction="#onActionSyukkin" prefHeight="25.0" prefWidth="70.0" text="出勤" />
+      <Button fx:id="btnTaikin" layoutX="393.0" layoutY="104.0" mnemonicParsing="false" onAction="#OnActionTaikin" prefHeight="25.0" prefWidth="70.0" text="退勤" />
+      <Label fx:id="lblSyukkin" layoutX="307.0" layoutY="137.0" text="XX：XX" />
+      <Label fx:id="lblTaikin" layoutX="408.0" layoutY="137.0" text="XX：XX" />
+      <Pane layoutX="14.0" layoutY="82.0" prefHeight="137.0" prefWidth="221.0" style="-fx-background-color: lightblue;">
+         <children>
+            <Label fx:id="lblToday" layoutX="14.0" layoutY="14.0" prefHeight="17.0" prefWidth="181.0" text="XXXX年XX月XX日">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTime" layoutX="44.0" layoutY="69.0" text="XX：XX">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
