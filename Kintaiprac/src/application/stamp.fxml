@@ -6,13 +6,12 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="453.0" prefWidth="736.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.stamp">
+<AnchorPane prefHeight="453.0" prefWidth="736.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.stamp">
    <children>
       <Button fx:id="btnSyukkin" layoutX="292.0" layoutY="104.0" mnemonicParsing="false" onAction="#onActionSyukkin" prefHeight="25.0" prefWidth="70.0" text="出勤" />
       <Button fx:id="btnTaikin" layoutX="393.0" layoutY="104.0" mnemonicParsing="false" onAction="#OnActionTaikin" prefHeight="25.0" prefWidth="70.0" text="退勤" />
-      <Label fx:id="lblSyukkin" layoutX="307.0" layoutY="137.0" text="XX：XX" />
-      <Label fx:id="lblTaikin" layoutX="408.0" layoutY="137.0" text="XX：XX" />
+      <Label fx:id="lblSyukkin" layoutX="307.0" layoutY="137.0" text="XX：XX" visible="false" />
+      <Label fx:id="lblTaikin" layoutX="408.0" layoutY="137.0" text="XX：XX" visible="false" />
       <Pane layoutX="14.0" layoutY="82.0" prefHeight="137.0" prefWidth="221.0" style="-fx-background-color: lightblue;">
          <children>
             <Label fx:id="lblToday" layoutX="14.0" layoutY="14.0" prefHeight="17.0" prefWidth="181.0" text="XXXX年XX月XX日">
@@ -27,5 +26,9 @@
             </Label>
          </children>
       </Pane>
+      <Button fx:id="btnLogout" layoutX="661.0" layoutY="39.0" mnemonicParsing="false" onAction="#OnActionLogout" text="ログアウト" />
+      <Label layoutX="463.0" layoutY="43.0" prefHeight="17.0" prefWidth="61.0" text="ユーザー名：" />
+      <Label fx:id="lblUserName" layoutX="524.0" layoutY="43.0" prefHeight="17.0" prefWidth="78.0" text="XXXXXXXX" />
+      <ComboBox fx:id="cboproject" layoutX="488.0" layoutY="104.0" prefWidth="150.0" />
    </children>
 </AnchorPane>
